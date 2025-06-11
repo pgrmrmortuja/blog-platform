@@ -9,3 +9,9 @@ export const POST = async(req) =>{
 
     return NextResponse.json(result);
 }
+
+export const GET = async (req) => {
+  const blogConnection = await dbConnect('blogs');
+  const blogs = await blogConnection.find({}).toArray(); 
+  return NextResponse.json(blogs);
+}
