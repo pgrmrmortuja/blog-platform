@@ -1,8 +1,11 @@
 'use client';
 
+import axios from "axios";
+import Swal from "sweetalert2";
+
 export default function AddBlogs() {
 
-  const handleAddBlogs = event => {
+  const handleAddBlogs = async (event) => {
     event.preventDefault();
 
     const form = event.target;
@@ -17,14 +20,26 @@ export default function AddBlogs() {
     const primary = form.primary.value;
     const secondary = form.secondary.value;
     const tags = { primary, secondary };
-    
-    const newBlogs = {  title, photo, short_snippet, full_content,tags};
+
+    const newBlogs = { title, photo, short_snippet, full_content, tags };
 
     console.log(newBlogs);
 
-   
+    const blogsRes = await axios.post('/api/blogs', newBlogs);
 
-    form.reset();
+    console.log(blogsRes.data);
+
+    if (blogsRes.data.insertedId) {
+      //show success popup
+      form.reset();
+      Swal.fire({
+        position: "top",
+        icon: "success",
+        title: `${title} is uploaded successfully.`,
+        showConfirmButton: false,
+        timer: 1500
+      });
+    }
   }
 
   return (
