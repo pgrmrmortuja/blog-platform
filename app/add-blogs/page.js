@@ -20,8 +20,9 @@ export default function AddBlogs() {
     const primary = form.primary.value;
     const secondary = form.secondary.value;
     const tags = { primary, secondary };
+    const date = new Date().toLocaleDateString();
 
-    const newBlogs = { title, photo, short_snippet, full_content, tags };
+    const newBlogs = { title, photo, short_snippet, full_content, tags, date };
 
     console.log(newBlogs);
 
