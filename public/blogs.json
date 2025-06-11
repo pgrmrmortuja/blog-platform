@@ -1,0 +1,212 @@
+[
+    {
+        "title": "The Art of Urban Gardening",
+        "photo": "https://surl.li/uqbgvz",
+        "short_snippet": "How to grow plants in small city spaces.",
+        "tags": {
+            "primary": "Gardening",
+            "secondary": "Lifestyle"
+        },
+        "date": "2025-06-10",
+        "full_content": "Urban gardening lets city dwellers grow herbs and vegetables in balconies or rooftops. Start with container plants, compost, and watering routines...",
+        "author_name": "Oscar Brown",
+        "author_photo": "https://via.placeholder.com/100x100?text=Oscar",
+        "author_email": "oscar.brown@example.com"
+    },
+    {
+        "title": "10 Classic Italian Recipes You Must Try",
+        "photo": "https://surli.cc/pjcpzz",
+        "short_snippet": "Bring authentic flavors to your kitchen.",
+        "tags": {
+            "primary": "Cooking",
+            "secondary": "Italian Food"
+        },
+        "date": "2025-06-09",
+        "full_content": "From creamy risotto to homemade pasta, these 10 classic Italian recipes are easy to follow and delicious. Includes tips for perfect dough and sauces...",
+        "author_name": "Lorenzo Rossi",
+        "author_photo": "https://via.placeholder.com/100x100?text=Lorenzo",
+        "author_email": "lorenzo.rossi@example.com"
+    },
+    {
+        "title": "Essential Hiking Gear for Beginners",
+        "photo": "https://surl.li/obpleh",
+        "short_snippet": "What you really need for a safe first hike.",
+        "tags": {
+            "primary": "Travel",
+            "secondary": "Outdoor"
+        },
+        "date": "2025-06-08",
+        "full_content": "Planning your first hike? Here’s a breakdown of gear: sturdy boots, backpack, hydration pack, navigation tools, and layering clothing...",
+        "author_name": "Ethan Walker",
+        "author_photo": "https://via.placeholder.com/100x100?text=Ethan",
+        "author_email": "ethan.walker@example.com"
+    },
+    {
+        "title": "Mindfulness Techniques for Everyday Life",
+        "photo": "https://surl.lu/pgjzny",
+        "short_snippet": "Simple habits to reduce stress daily.",
+        "tags": {
+            "primary": "Health",
+            "secondary": "Mindfulness"
+        },
+        "date": "2025-06-07",
+        "full_content": "Mindfulness can be practiced through breathing exercises, short pauses, and gratitude journaling. Try a 5-minute breathing break daily...",
+        "author_name": "Marcus Lee",
+        "author_photo": "https://via.placeholder.com/100x100?text=Marcus",
+        "author_email": "marcus.lee@example.com"
+    },
+    {
+        "title": "Guide to Budget-Friendly Home Decor",
+        "photo": "https://surli.cc/eoutsr",
+        "short_snippet": "Affordable style upgrades anyone can do.",
+        "tags": {
+            "primary": "Home",
+            "secondary": "Decor"
+        },
+        "date": "2025-06-06",
+        "full_content": "You don't need a big budget to refresh your home. Use thrift finds, DIY wall art, plants, and multi-purpose furniture...",
+        "author_name": "Samuel Green",
+        "author_photo": "https://via.placeholder.com/100x100?text=Samuel",
+        "author_email": "samuel.green@example.com"
+    },
+    {
+        "title": "Best Practices for Sustainable Travel",
+        "photo": "https://surl.li/oliplx",
+        "short_snippet": "Traveling responsibly for our planet.",
+        "tags": {
+            "primary": "Travel",
+            "secondary": "Sustainability"
+        },
+        "date": "2025-06-05",
+        "full_content": "Make eco-conscious choices: reuse water bottles, pack light, support local businesses and use public transport where possible...",
+        "author_name": "David Parker",
+        "author_photo": "https://via.placeholder.com/100x100?text=David",
+        "author_email": "david.parker@example.com"
+    },
+    {
+        "title": "Creative Writing Prompts to Spark Your Imagination",
+        "photo": "https://surl.lu/ikejne",
+        "short_snippet": "Get inspired with unusual prompts.",
+        "tags": {
+            "primary": "Writing",
+            "secondary": "Creativity"
+        },
+        "date": "2025-06-04",
+        "full_content": "Use prompts such as: ‘Write a story from your pet’s POV’ or ‘Describe a day in space.’ These spark creativity fast...",
+        "author_name": "Joshua Miller",
+        "author_photo": "https://via.placeholder.com/100x100?text=Joshua",
+        "author_email": "joshua.miller@example.com"
+    },
+    {
+        "title": "Basics of Indoor Plant Care",
+        "photo": "https://surl.li/irxmzk",
+        "short_snippet": "Help your plants thrive indoors.",
+        "tags": {
+            "primary": "Plants",
+            "secondary": "Care"
+        },
+        "date": "2025-06-03",
+        "full_content": "Indoor plants need correct light, watering schedules, humidity, and pot size. Opt for snake plants and pothos if you’re a beginner...",
+        "author_name": "Henry Davis",
+        "author_photo": "https://via.placeholder.com/100x100?text=Henry",
+        "author_email": "henry.davis@example.com"
+    },
+    {
+        "title": "Homemade Bread Recipe for Beginners",
+        "photo": "https://surl.li/rmctev",
+        "short_snippet": "Bake fresh bread with just 4 ingredients.",
+        "tags": {
+            "primary": "Cooking",
+            "secondary": "Baking"
+        },
+        "date": "2025-06-02",
+        "full_content": "This simple bread uses flour, water, yeast, and salt. Let it rise, bake at 200°C/390°F, and enjoy that crusty loaf fresh from the oven...",
+        "author_name": "George Baker",
+        "author_photo": "https://via.placeholder.com/100x100?text=George",
+        "author_email": "george.baker@example.com"
+    },
+    {
+        "title": "Yoga for Stress Relief: Easy Poses",
+        "photo": "https://surl.lu/zhoqcs",
+        "short_snippet": "Try these simple yoga moves.",
+        "tags": {
+            "primary": "Health",
+            "secondary": "Yoga"
+        },
+        "date": "2025-06-01",
+        "full_content": "Includes child’s pose, seated forward fold, and legs-up-the-wall. Each pose helps calm the mind and release tension...",
+        "author_name": "Liam Stewart",
+        "author_photo": "https://via.placeholder.com/100x100?text=Liam",
+        "author_email": "liam.stewart@example.com"
+    },
+    {
+        "title": "Mastering the Art of Coffee Brewing",
+        "photo": "https://surl.li/usxtwv",
+        "short_snippet": "Tips for making the perfect cup every time.",
+        "tags": {
+            "primary": "Food",
+            "secondary": "Beverages"
+        },
+        "date": "2025-05-31",
+        "full_content": "Learn different brewing methods like French press, pour-over, and espresso. Adjust grind size, water temp, and brew time for best results...",
+        "author_name": "Adrian Hall",
+        "author_photo": "https://via.placeholder.com/100x100?text=Adrian",
+        "author_email": "adrian.hall@example.com"
+    },
+    {
+        "title": "A Beginner's Guide to Digital Art",
+        "photo": "https://surl.li/oejwaf",
+        "short_snippet": "Start creating with simple tools and techniques.",
+        "tags": {
+            "primary": "Art",
+            "secondary": "Digital"
+        },
+        "date": "2025-05-30",
+        "full_content": "Digital art is accessible with just a tablet and free software. Start by sketching daily, exploring brushes, and studying light and composition...",
+        "author_name": "Thomas King",
+        "author_photo": "https://via.placeholder.com/100x100?text=Thomas",
+        "author_email": "thomas.king@example.com"
+    },
+    {
+        "title": "The Science Behind Good Sleep",
+        "photo": "https://surl.li/zjbbnx",
+        "short_snippet": "Understand your body’s natural rhythms.",
+        "tags": {
+            "primary": "Health",
+            "secondary": "Science"
+        },
+        "date": "2025-05-29",
+        "full_content": "Sleep impacts brain function and health. Limit blue light before bed, keep a schedule, and create a calm bedtime routine for better sleep...",
+        "author_name": "Nathan Scott",
+        "author_photo": "https://via.placeholder.com/100x100?text=Nathan",
+        "author_email": "nathan.scott@example.com"
+    },
+    {
+        "title": "How to Start a Personal Finance Journal",
+        "photo": "https://surl.li/husfyo",
+        "short_snippet": "Track spending and build habits that stick.",
+        "tags": {
+            "primary": "Finance",
+            "secondary": "Productivity"
+        },
+        "date": "2025-05-28",
+        "full_content": "Use a notebook or app to record income, expenses, and goals. Reflect weekly, and build awareness to manage money better...",
+        "author_name": "Ryan Mitchell",
+        "author_photo": "https://via.placeholder.com/100x100?text=Ryan",
+        "author_email": "ryan.mitchell@example.com"
+    },
+    {
+        "title": "Exploring the History of Culture",
+        "photo": "https://surli.cc/abqjwg",
+        "short_snippet": "From New Orleans to modern styles.",
+        "tags": {
+            "primary": "Haram",
+            "secondary": "Culture"
+        },
+        "date": "2025-05-27",
+        "full_content": "Jazz began in African-American communities of New Orleans. Key figures include Louis Armstrong and Miles Davis. It evolved through bebop, swing, and fusion...",
+        "author_name": "Brandon Hayes",
+        "author_photo": "https://via.placeholder.com/100x100?text=Brandon",
+        "author_email": "brandon.hayes@example.com"
+    }
+]
