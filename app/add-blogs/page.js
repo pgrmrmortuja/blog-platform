@@ -1,18 +1,22 @@
 'use client';
 
+import { AuthContext } from "@/providers/AuthProvider";
 import axios from "axios";
+import { useContext } from "react";
 import Swal from "sweetalert2";
 
 export default function AddBlogs() {
+
+  const { user } = useContext(AuthContext);
 
   const handleAddBlogs = async (event) => {
     event.preventDefault();
 
     const form = event.target;
 
-    // const author_name = form.author_name.value;
-    // const author_email = form.author_email.value;
-    // const author_photo = form.author_photo.value;
+    const author_name = form.author_name.value;
+    const author_email = form.author_email.value;
+    const author_photo = form.author_photo.value;
     const title = form.title.value;
     const photo = form.photo.value;
     const short_snippet = form.short_snippet.value;
@@ -22,7 +26,7 @@ export default function AddBlogs() {
     const tags = { primary, secondary };
     const date = new Date().toLocaleDateString();
 
-    const newBlogs = { title, photo, short_snippet, full_content, tags, date };
+    const newBlogs = { title, photo, short_snippet, full_content, tags, date, author_name, author_email, author_photo };
 
     console.log(newBlogs);
 
@@ -50,10 +54,10 @@ export default function AddBlogs() {
         className="w-full max-w-lg bg-orange-100 p-8 rounded-lg shadow-lg space-y-6">
         <h2 className="text-3xl font-bold text-center text-black mb-10">Add Your Blogs</h2>
 
-        {/* User Name (Read-only) */}
-        {/* <div className="mb-4">
+        {/* Author Name (Read-only) */}
+        <div className="mb-4">
           <label htmlFor="author_name" className="block text-lg font-medium text-gray-700">
-            User Name
+            Author Name
           </label>
           <input
             type="text"
@@ -63,36 +67,38 @@ export default function AddBlogs() {
             readOnly
             className="mt-2 w-full border-2 border-gray-300 rounded-lg px-4 py-2 bg-white cursor-not-allowed"
           />
-        </div> */}
+        </div>
 
-        {/* User Email (Read-only) */}
-        {/* <div className="mb-4">
+        {/* Author Email (Read-only) */}
+        <div className="mb-4">
           <label htmlFor="author_email" className="block text-lg font-medium text-gray-700">
-            User Email
+            Author Email
           </label>
           <input
             type="email"
-            name="email"
+            name="author_email"
             id="author_email"
             value={user?.email || ""}
             readOnly
             className="mt-2 w-full border-2 border-gray-300 bg-white rounded-lg px-4 py-2 cursor-not-allowed"
           />
-        </div> */}
+        </div>
 
-        {/* Photo URL */}
-        {/* <div className="mb-4">
+        {/* Author Photo URL */}
+        <div className="mb-4">
           <label htmlFor="author_photo" className="block text-lg font-medium text-gray-700">
-            Product's Photo URL
+            Author Photo URL
           </label>
           <input
             type="text"
             name="author_photo"
             id="author_photo"
+            value={user?.photoURL || ""}
+            readOnly
             className="mt-2 w-full bg-white border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
             required
           />
-        </div> */}
+        </div>
 
         {/* Blog Title */}
         <div className="mb-4">

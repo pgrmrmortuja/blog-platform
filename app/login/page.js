@@ -13,9 +13,7 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
     const router = useRouter();
 
-    useEffect(() => {
-        document.title = "Login | EquiSports";
-    }, []);
+    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -81,10 +79,9 @@ const Login = () => {
                             id="email"
                             name="email"
                             type="email"
-                            placeholder="email"
+                            placeholder="your email"
                             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent bg-white"
                             required
-                            onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
                     <div className="relative">

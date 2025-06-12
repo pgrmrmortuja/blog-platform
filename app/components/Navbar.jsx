@@ -43,6 +43,9 @@ const Navbar = () => {
             <Link href="/add-blogs" className="text-gray-700 hover:text-blue-500">
               Add Blogs
             </Link>
+            <Link href="/my-blogs" className="text-gray-700 hover:text-blue-500">
+              My Blogs
+            </Link>
           </div>
 
           {/* Right: Profile/Login */}
