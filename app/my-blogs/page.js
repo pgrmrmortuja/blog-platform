@@ -90,7 +90,7 @@ export default function MyBlogs() {
 
                                 {/* 👇 Update & Delete buttons */}
                                 <div className="flex justify-between items-center mt-4">
-                                    <Link href={`/update/${blog._id}`}>
+                                    <Link href={`my-blogs/update/${blog._id}`}>
                                         <button className="text-blue-600 hover:text-blue-800 text-xl" title="Edit">
                                             <FaEdit />
                                         </button>
