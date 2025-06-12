@@ -24,12 +24,9 @@ export const PATCH = async (req) => {
   return NextResponse.json({ message: "Blog updated successfully" });
 };
 
-export const DELETE = async (req) => {
-  const { id } = req.params;
+export const DELETE = async (req, { params }) => {
+  const { id } = params;
   const blogConnection = await dbConnect('blogs');
   const result = await blogConnection.deleteOne({ _id: new ObjectId(id) });
-  if (result.deletedCount === 0) {
-    return NextResponse.json({ error: "Blog not found" }, { status: 404 });
-  }
   return NextResponse.json({ message: "Blog deleted successfully" });
 };
