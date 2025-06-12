@@ -3,19 +3,19 @@
 import { FaUserCircle } from "react-icons/fa";
 import { useState, useContext } from "react";
 import Link from "next/link";
-import { AuthContext } from "@/providers/AuthProvider"; // পাথ তোমার প্রকৃতির সাথে সামঞ্জস্য করো
+import { AuthContext } from "@/providers/AuthProvider";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // AuthContext থেকে user এবং logOut ফাংশন নিচ্ছি
+
   const { user, logOut } = useContext(AuthContext);
 
-  // লগআউট হ্যান্ডলার
+
   const handleLogout = async () => {
     try {
       await logOut();
-      // router.push("/login");
+      router.push("/login");
     } catch (error) {
       console.error("Logout Error:", error);
     }
@@ -40,12 +40,21 @@ const Navbar = () => {
             <Link href="/all-blogs" className="text-gray-700 hover:text-blue-500">
               All Blogs
             </Link>
-            <Link href="/add-blogs" className="text-gray-700 hover:text-blue-500">
-              Add Blogs
-            </Link>
-            <Link href="/my-blogs" className="text-gray-700 hover:text-blue-500">
-              My Blogs
-            </Link>
+            {
+              user && (
+                <Link href="/add-blogs" className="text-gray-700 hover:text-blue-500">
+                  Add Blogs
+                </Link>
+              )
+            }
+            {
+              user && (
+                <Link href="/my-blogs" className="text-gray-700 hover:text-blue-500">
+                  My Blogs
+                </Link>
+              )
+            }
+            
           </div>
 
           {/* Right: Profile/Login */}

@@ -5,6 +5,7 @@ import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { useParams, useRouter } from "next/navigation";
+import PrivateRoute from "@/routes/PrivateRoute";
 
 export default function UpdateBlogs() {
     const { user } = useContext(AuthContext);
@@ -82,29 +83,32 @@ export default function UpdateBlogs() {
     // }
 
     return (
-        <div className="flex justify-center items-center min-h-screen p-6">
-            <form
-                onSubmit={handleUpdateBlogs}
-                className="w-full max-w-lg bg-orange-100 p-8 rounded-lg shadow-lg space-y-6"
-            >
-                <h2 className="text-3xl font-bold text-center text-black mb-10">Update Blog</h2>
+        <PrivateRoute>
+            <div className="flex justify-center items-center min-h-screen p-6">
+                <form
+                    onSubmit={handleUpdateBlogs}
+                    className="w-full max-w-lg bg-orange-100 p-8 rounded-lg shadow-lg space-y-6"
+                >
+                    <h2 className="text-3xl font-bold text-center text-black mb-10">Update Blog</h2>
 
-                {/* Author Name */}
-                <input type="text" name="author_name" defaultValue={user?.displayName} readOnly className="w-full bg-white px-4 py-2 border rounded" />
-                <input type="email" name="author_email" defaultValue={user?.email} readOnly className="w-full bg-white px-4 py-2 border rounded" />
-                <input type="text" name="author_photo" defaultValue={user?.photoURL} readOnly className="w-full bg-white px-4 py-2 border rounded" />
+                    {/* Author Name */}
+                    <input type="text" name="author_name" defaultValue={user?.displayName} readOnly className="w-full bg-white px-4 py-2 border rounded" />
+                    <input type="email" name="author_email" defaultValue={user?.email} readOnly className="w-full bg-white px-4 py-2 border rounded" />
+                    <input type="text" name="author_photo" defaultValue={user?.photoURL} readOnly className="w-full bg-white px-4 py-2 border rounded" />
 
-                <input type="text" name="title" defaultValue={blog.title} required className="w-full px-4 py-2 border rounded" />
-                <input type="text" name="photo" defaultValue={blog.photo} required className="w-full px-4 py-2 border rounded" />
-                <textarea name="short_snippet" defaultValue={blog.short_snippet} required className="w-full px-4 py-2 border rounded" />
-                <textarea name="full_content" defaultValue={blog.full_content} required className="w-full px-4 py-2 border rounded" />
-                <input type="text" name="primary" defaultValue={blog.tags?.primary} className="w-full px-4 py-2 border rounded" />
-                <input type="text" name="secondary" defaultValue={blog.tags?.secondary} className="w-full px-4 py-2 border rounded" />
+                    <input type="text" name="title" defaultValue={blog.title} required className="w-full px-4 py-2 border rounded" />
+                    <input type="text" name="photo" defaultValue={blog.photo} required className="w-full px-4 py-2 border rounded" />
+                    <textarea name="short_snippet" defaultValue={blog.short_snippet} required className="w-full px-4 py-2 border rounded" />
+                    <textarea name="full_content" defaultValue={blog.full_content} required className="w-full px-4 py-2 border rounded" />
+                    <input type="text" name="primary" defaultValue={blog.tags?.primary} className="w-full px-4 py-2 border rounded" />
+                    <input type="text" name="secondary" defaultValue={blog.tags?.secondary} className="w-full px-4 py-2 border rounded" />
 
-                <button type="submit" className="w-full py-3 btn bg-orange-500 text-black font-bold">
-                    Update Blog
-                </button>
-            </form>
-        </div>
+                    <button type="submit" className="w-full py-3 btn bg-orange-500 text-black font-bold">
+                        Update Blog
+                    </button>
+                </form>
+            </div>
+        </PrivateRoute>
+
     );
 }
