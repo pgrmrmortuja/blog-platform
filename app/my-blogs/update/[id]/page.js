@@ -9,7 +9,7 @@ import { useParams, useRouter } from "next/navigation";
 export default function UpdateBlogs() {
     const { user } = useContext(AuthContext);
     const { id } = useParams();
-    console.log(" update id", id);
+    console.log("update id", id);
     const router = useRouter();
 
     const [blog, setBlog] = useState([]);
